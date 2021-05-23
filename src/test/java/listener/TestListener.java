@@ -1,4 +1,4 @@
-package request;
+package listener;
 
 import io.qameta.allure.Attachment;
 import io.restassured.RestAssured;
@@ -12,7 +12,7 @@ import org.junit.jupiter.api.extension.TestWatcher;
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 
-public class TestProvider implements TestWatcher, BeforeAllCallback, BeforeEachCallback {
+public class TestListener implements TestWatcher, BeforeAllCallback, BeforeEachCallback {
 
     private ByteArrayOutputStream request = new ByteArrayOutputStream();
     private ByteArrayOutputStream response = new ByteArrayOutputStream();

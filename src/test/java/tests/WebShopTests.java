@@ -1,6 +1,6 @@
 package tests;
 
-import request.TestProvider;
+import listener.TestListener;
 import model.AddToCartResponse;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -15,7 +15,7 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;
 import static request.Request.post;
 
-@ExtendWith(TestProvider.class)
+@ExtendWith(TestListener.class)
 public class WebShopTests extends TestBase {
 
     public String cookie;
